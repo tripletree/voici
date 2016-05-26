@@ -1,0 +1,75 @@
+
+body {
+    font-family:  Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+}
+
+p{
+  font-size: 28px;
+  margin-top: 20px;
+}
+
+#container {
+  padding-top:20px;
+  width: 1080px;
+}
+
+header {
+text-align: center;}
+
+
+#vis {
+  overflow: hidden;
+  position: relative;
+}
+
+#button {
+  width: 61px;
+  margin: 20px auto;
+}
+
+.bubble-node {
+    cursor: pointer;
+
+  fill: rgb(255,87,120);
+}
+
+.bubble-hover {
+  /* fill: #b8c7d9; */
+  fill:rgba(255,89,122,0.94);
+}
+
+.bubble-selected {
+  /* fill: #a8c8ee;  */
+  fill: rgb(255,89,122);
+  /* stroke: #6081a3; */
+  stroke: rgba(255,89,122,0.3);
+  stroke-width: 20px;
+}
+
+.bubble-label {
+  fill: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  line-height: 1em;
+  position: absolute;
+}
+
+
+.bubble-label .bubble-label-value {
+  font: 11px sans-serif;
+  white-space: nowrap;
+}
+
+.btn-ok{
+  width: 100px;
+  height: 40px;
+  border: 2px solid #E4E7EB;
+  box-shadow: none;
+  background-image: none;
+  background-color:#F4F6F6;
+  color: #000;
+}
+

@@ -1,0 +1,83 @@
+/******
+  user 
+******/
+body{
+    background-color: #fff;
+}
+.main{
+   width:1020px;
+   margin:10px auto;
+}
+
+.center{
+    margin: 0 auto;
+    vertical-align: middle;
+    text-align: center;
+}
+.avartar {
+    width: 80px;
+    height: 80px;
+    margin: 0px auto;    
+}
+.link li{
+    display: inline-block;
+    padding: 2px;
+    font-size: 18px;
+    vertical-align: middle;
+}
+.link a{
+    color: #8d49ad;
+}
+#tabs{
+    margin: 0 auto;
+}
+#tabs .nav-tabs{
+    display: block;
+    float: none;
+    width: 140px;
+    margin: 0 auto;
+    font-size: 20px;
+}
+#tabs .nav-tabs>li{
+    width: 70px;
+}
+#tabs .nav-tabs>li>a{
+    background-color: #F1F4F4;
+    padding: 10px;
+    height: 40px;
+}
+#tabs .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus{
+   background-color: #00d1c1; 
+}
+#tabs .navbar, .nav{
+    height: 40px;
+}
+.tab-content{
+    margin-top: 20px;
+}
+.radarChart {
+    width: 700px;
+    margin: 0 auto;
+    position: relative; 
+}
+.btn-round{
+    position: absolute;
+    top: 218px;
+    left: 310px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgba(51,51,51,204,100);
+    display: table;
+    border:none;
+}
+.btn-round p{
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+    font-size: 14px;
+}
+
+.radarChart a:hover{
+    background-color: rgba(255,255,255,0.4);
+}

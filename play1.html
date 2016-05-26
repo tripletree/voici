@@ -1,0 +1,120 @@
+<!doctype html>
+<html  lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>videoRecommendation</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="font-awesome-4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/play.css">
+</head>
+
+<body>
+     <nav class="header navbar navbar-default navbar-fixed-top " role="navigation">
+    <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+  
+      <a class="header-logo" href="index.html"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <!--tab-->
+   <ul class="nav nav-tabs" >
+        <li ><a href="animation.html">动画</a></li>
+        <li><a href="drama.html">电视剧</a></li>
+        <li><a href="movie.html" >电影</a></li>
+        <li><a href="entertainment.html">娱乐</a></li>
+        <li><a href="tech.html" >科技</a></li>
+        <li><a href="topic.html">发现</a></li>
+      </ul>
+
+      <!--user-->
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img class="circle-img" width="50px" height="50px" src="img/user.jpg">
+            <span class="name">Username</span><span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="user.html">我的主页</a></li>
+            <li class="divider"></li>
+            <li><a href="#">退出登录</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<!--main-->
+<div class="main">
+  <div class="primary">
+    <div class="video-container">
+       <embed width="630" height="390"quality="high" allowfullscreen="true" type="application/x-shockwave-flash" src="http://share.acg.tv/flash.swf" flashvars="aid=1913027&page=1" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash"></embed>
+    </div>
+
+    <div id="video-header">
+      <div class="headline">
+        <h3><a href="http://www.bilibili.com/video/av1913027/">夏目友人帐</a></h3>
+      </div>
+      <div class="like-above-r like">
+        <input type="checkbox" id="like-1" name="like">
+          <label for="like-1"></label>
+        </input>
+      </div>
+       <div class="trash-above-r trash">
+        <input type="checkbox" id="trash-1" name="trash">
+          <label for="trash-1"></label>
+        </input>
+      </div>
+       <button type="button" class="btn-r" >
+        <span class="fa fa-weibo" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+
+  <div id="secondary">
+   <div class="sidebar">
+   <h4>可能喜欢</h4>
+    <ul>
+      <li class="video-list-item">
+        <a href="http://www.bilibili.com/video/av1913027/">
+            <span class="thumb"><img width="120px" height="68px" src="img/itema-3.jpg"></span>
+            <div class="title">火影忍者</div>
+            <div class="info">2001910次播放</div>
+        </a></li>
+         <li class="video-list-item">
+        <a href="http://www.bilibili.com/video/av1913027/">
+            <span class="thumb"><img width="120px" height="68px" src="img/item2.jpg"></span>
+            <div class="title">夏目友人帐</div>
+            <div class="info">3019次播放</div>
+        </a></li>
+         <li class="video-list-item">
+        <a href="http://www.bilibili.com/video/av1913027/">
+            <span class="thumb"><img width="120px" height="68px" src="img/item9.jpg"></span>
+            <div class="title">家族的形式</div>
+            <div class="info">2839188次播放</div>
+        </a></li>
+          <li class="video-list-item">
+        <a href="http://www.bilibili.com/video/av1913027/">
+            <span class="thumb"><img width="120px" height="68px" src="img/itemd-6.jpg"></span>
+            <div class="title">重版出来</div>
+            <div class="info">92940次播放</div>
+        </a></li>
+          <li class="video-list-item">
+        <a href="http://www.bilibili.com/video/av1913027/">
+            <span class="thumb"><img width="120px" height="68px" src="img/itema-2.jpg"></span>
+            <div class="title">银魂</div>
+            <div class="info">2829371次播放</div>
+        </a></li>
+    </ul>
+    </div>
+  </div>
+</div>
+<script src="js/libs/jquery/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

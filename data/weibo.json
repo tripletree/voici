@@ -1,0 +1,193 @@
+
+
+{
+ "name": "root",
+ "children": [
+
+  {
+  
+     "name": "爸爸去哪儿",
+     "children": [
+      {"name": "爸爸", "size": 0.3},
+      {"name": "亲子", "size": 0.5},
+      {"name": "旅游", "size": 0.2}
+     ]
+  },
+   
+  {
+     "name": "",
+     "children": [
+      {"name": "爸爸", "size": 0.3},
+      {"name": "亲子", "size": 0.5},
+      {"name": "旅游", "size": 0.2}
+     ]
+  },
+  
+  {
+  
+     "name": "爸爸去哪儿",
+     "children": [
+      {"name": "爸爸", "size": 0.5},
+      {"name": "亲子", "size": 0.2},
+      {"name": "旅游", "size": 0.3}
+     ]
+  },
+   
+  {
+     "name": "科学探索",
+     "children": [
+      {"name": "宇宙", "size": 0.4},
+      {"name": "太空", "size": 0.3},
+      {"name": "科技", "size": 0.3}
+     ]
+  },
+  {
+  
+     "name": "",
+     "children": [
+      {"name": "爸爸", "size": 0.2},
+      {"name": "亲子", "size": 0.3},
+      {"name": "旅游", "size": 0.5}
+     ]
+  },
+   
+  {
+     "name": "科学探索",
+     "children": [
+      {"name": "宇宙", "size": 0.6},
+      {"name": "太空", "size": 0.1},
+      {"name": "科技", "size": 0.3}
+     ]
+  },
+  {
+  
+     "name": "",
+     "children": [
+      {"name": "爸爸", "size": 0.4},
+      {"name": "亲子", "size": 0.3},
+      {"name": "旅游", "size": 0.3}
+     ]
+  },
+   
+  {
+     "name": "",
+     "children": [
+      {"name": "宇宙", "size": 0.2},
+      {"name": "太空", "size": 0.4},
+      {"name": "科技", "size": 0.4}
+     ]
+  },{
+  
+     "name": "爸爸去哪儿",
+     "children": [
+      {"name": "爸爸", "size": 0.3},
+      {"name": "亲子", "size": 0.2},
+      {"name": "旅游", "size": 0.5}
+     ]
+  },
+   
+  {
+     "name": "科学探索",
+     "children": [
+      {"name": "宇宙", "size": 0.4},
+      {"name": "太空", "size": 0.3},
+      {"name": "科技", "size": 0.3}
+     ]
+  },
+
+  {
+  
+     "name": "爸爸去哪儿",
+     "children": [
+      {"name": "爸爸", "size": 0.2},
+      {"name": "亲子", "size": 0.5},
+      {"name": "旅游", "size": 0.3}
+     ]
+  },
+   
+   {
+  
+     "name": "",
+     "children": [
+      {"name": "爸爸", "size": 0.3},
+      {"name": "亲子", "size": 0.2},
+      {"name": "旅游", "size": 0.5}
+     ]
+  },
+    {
+     "name": "科学探索",
+     "children": [
+      {"name": "宇宙", "size": 0.6},
+      {"name": "太空", "size": 0.1},
+      {"name": "科技", "size": 0.3}
+     ]
+  },
+  {
+  
+     "name": "",
+     "children": [
+      {"name": "爸爸", "size": 0.4},
+      {"name": "亲子", "size": 0.3},
+      {"name": "旅游", "size": 0.3}
+     ]
+  },
+   
+  {
+     "name": "",
+     "children": [
+      {"name": "宇宙", "size": 0.2},
+      {"name": "太空", "size": 0.4},
+      {"name": "科技", "size": 0.4}
+     ]
+  },{
+  
+     "name": "爸爸去哪儿",
+     "children": [
+      {"name": "爸爸", "size": 0.3},
+      {"name": "亲子", "size": 0.2},
+      {"name": "旅游", "size": 0.5}
+     ]
+  },
+   
+  {
+     "name": "科学探索",
+     "children": [
+      {"name": "宇宙", "size": 0.4},
+      {"name": "太空", "size": 0.3},
+      {"name": "科技", "size": 0.3}
+     ]
+  },
+
+  {
+  
+     "name": "爸爸去哪儿",
+     "children": [
+      {"name": "爸爸", "size": 0.2},
+      {"name": "亲子", "size": 0.5},
+      {"name": "旅游", "size": 0.3}
+     ]
+  },
+   
+   {
+  
+     "name": "",
+     "children": [
+      {"name": "爸爸", "size": 0.3},
+      {"name": "亲子", "size": 0.2},
+      {"name": "旅游", "size": 0.5}
+     ]
+  },
+   
+  {
+     "name": "",
+     "children": [
+      {"name": "宇宙", "size": 0.4},
+      {"name": "太空", "size": 0.2},
+      {"name": "科技", "size": 0.4}
+     ]
+  }
+  
+  
+ ]
+}
+

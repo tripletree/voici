@@ -1,0 +1,193 @@
+
+
+{
+ "name": "root",
+ "children": [
+
+  {
+  
+     "name": "爸爸去哪儿",
+     "children": [
+      {"name": "爸爸", "size": 0.3},
+      {"name": "亲子", "size": 0.5},
+      {"name": "旅游", "size": 0.2}
+     ]
+  },
+   
+  {
+     "name": "科学探索",
+     "children": [
+      {"name": "宇宙", "size": 0.3},
+      {"name": "太空", "size": 0.4},
+      {"name": "科技", "size": 0.3}
+     ]
+  },
+  
+  {
+     "name": "三国志",
+     "children": [
+      {"name": "三国", "size": 0.3},
+      {"name": "曹操", "size": 0.4},
+      {"name": "游戏", "size": 0.3}
+     ]
+  },
+  {
+     "name": "女生歌曲",
+     "children": [
+      {"name": "好听", "size": 0.4},
+      {"name": "戏调", "size": 0.3},
+      {"name": "可爱", "size": 0.3}
+     ]
+  },
+  {
+  
+     "name": "游戏直播",
+     "children": [
+      {"name": "直播", "size": 0.2},
+      {"name": "英雄", "size": 0.3},
+      {"name": "联盟", "size": 0.5}
+     ]
+  },
+    {
+     "name": "现场表演",
+     "children": [
+      {"name": "现场", "size": 0.6},
+      {"name": "录制", "size": 0.1},
+      {"name": "孤单", "size": 0.3}
+     ]
+  },
+  {
+  
+     "name": "健身",
+     "children": [
+      {"name": "瘦身", "size": 0.4},
+      {"name": "锻炼", "size": 0.3},
+      {"name": "肌肉", "size": 0.3}
+     ]
+  },
+   
+  {
+     "name": "恋爱动漫",
+     "children": [
+      {"name": "动漫", "size": 0.2},
+      {"name": "撩妹", "size": 0.4},
+      {"name": "日本", "size": 0.4}
+     ]
+  },{
+  
+     "name": "小米",
+     "children": [
+      {"name": "小米", "size": 0.3},
+      {"name": "回归", "size": 0.2},
+      {"name": "电脑", "size": 0.5}
+     ]
+  },
+   
+  {
+     "name": "游戏解说",
+     "children": [
+      {"name": "教程", "size": 0.4},
+      {"name": "英雄", "size": 0.3},
+      {"name": "解说", "size": 0.3}
+     ]
+  },
+
+  {
+  
+     "name": "化妆",
+     "children": [
+      {"name": "技能", "size": 0.2},
+      {"name": "化妆", "size": 0.5},
+      {"name": "赞上", "size": 0.3}
+     ]
+  },
+   
+   {
+  
+     "name": "鬼畜视频",
+     "children": [
+      {"name": "鬼畜", "size": 0.3},
+      {"name": "局长", "size": 0.2},
+      {"name": "有毒", "size": 0.5}
+     ]
+  },
+   
+  {
+     "name": "动画剪辑",
+     "children": [
+      {"name": "动画", "size": 0.6},
+      {"name": "童年", "size": 0.1},
+      {"name": "mad", "size": 0.3}
+     ]
+  },
+  {
+  
+     "name": "绘画教程",
+     "children": [
+      {"name": "大触", "size": 0.4},
+      {"name": "原画", "size": 0.3},
+      {"name": "教程", "size": 0.3}
+     ]
+  },
+   
+  {
+     "name": "励志电影",
+     "children": [
+      {"name": "燃", "size": 0.2},
+      {"name": "鸡汤", "size": 0.4},
+      {"name": "电影", "size": 0.4}
+     ]
+  },{
+  
+     "name": "奇葩说",
+     "children": [
+      {"name": "奇葩", "size": 0.3},
+      {"name": "综艺", "size": 0.2},
+      {"name": "马东", "size": 0.5}
+     ]
+  },
+   
+  {
+     "name": "美食节目",
+     "children": [
+      {"name": "寿司", "size": 0.4},
+      {"name": "吃货", "size": 0.3},
+      {"name": "米其林", "size": 0.3}
+     ]
+  },
+
+  {
+  
+     "name": "宅舞",
+     "children": [
+      {"name": "跳舞", "size": 0.2},
+      {"name": "萝莉", "size": 0.5},
+      {"name": "初音", "size": 0.3}
+     ]
+  },
+
+    {
+     "name": "动物圈",
+     "children": [
+      {"name": "喵星人", "size": 0.4},
+      {"name": "可爱", "size": 0.2},
+      {"name": "动物园", "size": 0.4}
+     ]
+  },
+   
+   {
+  
+     "name": "音乐演奏",
+     "children": [
+      {"name": "吉他", "size": 0.3},
+      {"name": "原创", "size": 0.2},
+      {"name": "触手", "size": 0.5}
+     ]
+  }
+   
+
+  
+  
+ ]
+}
+

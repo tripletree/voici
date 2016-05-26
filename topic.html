@@ -1,0 +1,112 @@
+<!doctype html>
+<html  lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>videoRecommendation</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome-4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/user.css">
+      <link rel="stylesheet" href="css/play.css">
+    <link rel="stylesheet" href="css/topic.css">
+      <script type="text/javascript" src="//code.jquery.com/jquery-1.8.3.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+  
+
+
+<style>
+
+  .video-panel {
+    position: fixed;
+    width:260px;
+    height:300px;
+    background:#fff;
+    right:-300px;
+    top:70px;
+    z-index: 1000;
+}
+
+  .weibo-panel {
+    position: fixed;
+    width:260px;
+    height:260px;
+    background:#fff;
+    right:-300px;
+    top:380px;
+    z-index: 1050;
+}
+
+.listDot{
+  width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #95D7F2;
+
+}
+
+  .topBubbleText, .childText{
+    font-size: 12px;
+    fill: #354A5F;
+  }
+
+  .link {
+    fill: none;
+    stroke: black;
+    stroke-opacity: .5;
+    stroke-width: 8px;
+  }
+  
+  </style>
+</head>
+
+<body>
+ <nav class="header navbar navbar-default navbar-fixed-top " role="navigation">
+    <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+  
+      <a class="header-logo" href="home.html"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <!--tab-->
+      <ul class="nav nav-tabs" role="tablist" id="type-tab">
+        <li ><a href="#tab-anime" role="tab" data-toggle="tab">动画</a></li>
+        <li><a href="#tab-drama" role="tab" data-toggle="tab">电视剧</a></li>
+        <li><a href="#tab-movie" role="tab" data-toggle="tab">电影</a></li>
+        <li><a href="#tab-entertainment" role="tab" data-toggle="tab">娱乐</a></li>
+        <li><a href="#tab-tech" role="tab" data-toggle="tab">科技</a></li>
+        <li class="active"><a href="#">发现</a></li>
+      </ul>
+
+      <!--user-->
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img class="circle-img" width="50px" height="50px" src="img/user.jpg">
+            <span class="name">Username</span></a>
+            <ul class="dropdown-icon dropdown-menu user-menu" role="menu">
+              <li><a href="user.html">我的主页</a></li>
+              <li><a href="index.html">退出登录</a></li>
+            </ul>
+        </li>
+      </ul>
+
+    </div><!-- /.navbar-collapse -->
+
+  
+
+  </div><!-- /.container-fluid -->
+</nav>
+<div id="topic">
+<div class="topic-name"></div>
+<script src="js/bubbleTopic.js"></script>
+  
+</div>
+<script src="js/libs/jquery/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

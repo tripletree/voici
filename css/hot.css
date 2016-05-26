@@ -1,0 +1,19 @@
+.login-btn{
+    margin:24px auto;
+    width:200px;
+}
+
+.btn-weibo{
+   color: #00d1c1;
+    font-size:16px;
+    font-weight: 500;
+    float: right;
+}
+.btn-weibo i{
+    padding-right:10px;
+    position:relative;
+}
+
+.navbar-nav.navbar-right:last-child{
+	margin-right: 0;
+}

@@ -1,0 +1,125 @@
+
+body{
+
+    font-family:Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-color: #ebebeb;
+}
+
+a{
+    color: #4c4c4c;
+}
+a, a:hover, a:focus{
+    text-decoration: none;
+}
+a:hover, a:focus{
+    color: #00d1c1;
+}
+
+ul{
+    list-style: none outside none;
+}
+
+#header{
+    margin: 0px auto ;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: #fff;
+}
+.logo {
+width: 200px;
+height: 72px;
+margin: 0 auto 40px;
+background: url(../img/logo.png) center no-repeat; 
+background-size: 200px 72px;
+}
+.login-btn{
+    margin:0 auto;
+    width:250px;
+}
+.btn {
+display:block;
+margin-bottom: 10px;
+text-align: center;
+border-radius: 2px;
+font-size: 15px;
+letter-spacing:2px;
+padding: 12px 24px;
+font-family:Arial,sans-serif;
+text-decoration: none;}
+
+.btn-primary{
+border-color:#fff;
+}
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus{
+background-color:#00b2a4;
+border-color:#fff;
+}
+.btn-weibo{
+    background-color:#00d1c1;
+}
+.btn-weibo i{
+    padding-right:10px;
+    position:relative;
+    font-size:18px;
+}
+
+.slogan{
+    margin-top: 25px;
+    font-size: 16px;
+    text-align: center;
+    color: #6e6e6e;
+}
+
+
+
+
+/* video list */
+.container{
+    width: 920px;
+}
+
+.row{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.col-md-3{
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.panel-img{
+    height: 120px;
+    border-radius: 2px;
+    overflow: hidden;
+    position: relative;
+}
+
+.panel-info{
+    margin-top: -1px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+.title{
+    display: inline-block;
+    margin: 10px;
+}
+
+.title>a, .duration{
+    font-size:14px;
+    font-weight: 400;
+}
+
+.duration{
+    display: inline-block;
+    float: right;
+    margin: 10px;
+}
+.wrap{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+}
+.link{
+    font-size: 14px;
+}

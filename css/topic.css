@@ -1,0 +1,22 @@
+body{
+	background-color: #F0F3F3;
+}
+#topic{
+	width: 800px;
+    margin: 0 auto;
+}
+
+.topCircle{
+	 stroke: white;
+    stroke-width: 1px;
+}
+
+@font-face { 
+font-family: DinPro;
+src: url('./fonts/dinpro.woff');}
+
+.intro{
+	font-size: 14px;
+	fill:#354A5F;
+	font-family: DinPro;
+}

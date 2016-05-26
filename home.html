@@ -1,0 +1,469 @@
+<!doctype html>
+<html  lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>videoRecommendation</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome-4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.8.3.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+
+    <script type="text/javascript">
+      $(function(){
+  $('.slider-arrow').click(function(){
+        if($(this).hasClass('show')){
+      $( ".slider-arrow, .change-panel" ).animate({
+          right: "+=450"
+      }, 700, function() {
+            // Animation complete.
+          });
+      $(this).removeClass('show').addClass('hide-panel');
+        }
+        else {    
+      $( ".slider-arrow, .change-panel" ).animate({
+          right: "-=450"
+      }, 700, function() {
+            // Animation complete.
+          });
+      $(this).removeClass('hide-panel').addClass('show');    
+        }
+    });
+
+});
+    </script>
+  
+</head>
+
+<body>
+    <nav class="header navbar navbar-default navbar-fixed-top " role="navigation">
+    <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+  
+      <a class="header-logo" href="home.html"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <!--tab-->
+      <ul class="nav nav-tabs" >
+        <li ><a href="animation.html">动画</a></li>
+        <li><a href="drama.html">电视剧</a></li>
+        <li><a href="movie.html" >电影</a></li>
+        <li><a href="home.html">娱乐</a></li>
+        <li><a href="home.html" >科技</a></li>
+        <li><a href="topic.html">发现</a></li>
+      </ul>
+
+      <!--user-->
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img class="circle-img" width="50px" height="50px" src="img/user.jpg">
+            <span class="name">Username</span></a>
+            <ul class="dropdown-icon dropdown-menu user-menu" role="menu">
+            <li><a href="user.html">我的主页</a></li>
+            <li><a href="index.html">退出登录</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <!--likes/deletes/refresh-->
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+           <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <button type="button" class="btn btn-icon" aria-label="Left Align">
+            <span class="fa fa-heart" aria-hidden="true"></span>
+            </button><span id="like-counts">0</span></a>
+
+            <ul class="dropdown-menu dropdown-icon" role="menu">
+            <li><div><h5><a href="play.html">白日梦想家</a></h5></div>
+            <li><div><h5><a href="#">夏目友人帐</a></h5></div></li>
+            <li><div><h5><a href="#">奥斯卡最佳电影【聚焦】</a></h5></div></li>
+            <li><div><h5><a href="#">蜡笔小新</a></h5></div></li>
+            <li><div><h5><a href="#">校园迷糊大王</a></h5></div></li>
+            <li><div><h5><a href="#">独特中国味</a></h5></div></li>
+            <li><div class="center-link"><h5><a href="user.html#likes">查看全部 »</a></h5></div></li>
+          </ul>
+        </li>
+        <li>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <button type="button" class="btn btn-icon" aria-label="Left Align">
+            <span class="fa fa-trash" aria-hidden="true"></span>
+            </button><span id="unlike-counts">0</span></a>
+            <ul class="dropdown-menu dropdown-icon" role="menu">
+            <li><div><h5><a href="play.html">白日梦想家</a></h5></div>
+            <li><div><h5><a href="#">夏目友人帐</a></h5></div></li>
+            <li><div><h5><a href="#">奥斯卡最佳电影【聚焦】</a></h5></div></li>
+            <li><div><h5><a href="#">蜡笔小新</a></h5></div></li>
+            <li><div><h5><a href="#">校园迷糊大王</a></h5></div></li>
+            <li><div><h5><a href="#">独特中国味</a></h5></div></li>
+          </ul>
+        </li>
+        <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <button type="button" class="btn btn-icon" aria-label="Left Align">
+            <span class="fa fa-refresh" aria-hidden="true"></span></button>
+            </a>
+        </li>
+      </ul>
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<!--video list-->
+<div class="container container-video">
+  
+ 
+  <div class="row">
+      <div class="col-md-6">
+      <div class="panel-img-lg">
+        <a href="play.html" target="blank"><img src="img/item1.jpg" width="500px" height="280px"></a>
+        <div class="reason">
+          <div class="reasontext">
+          <p>推荐原因：</p>
+          <p>你有燃向DNA</p>
+          <p>你喜欢看《幸福终点站》</p>
+          <p>你的朋友Gigi_cst喜欢</p>
+          </div>
+        </div>
+      </div>
+      <div class="panel-info-above">
+        <p class="title"><a href="play.html" target="blank">白日梦想家</a></p>
+        <div class="info"><span>电影</span><span>134:00</span></div>
+      </div>
+       <div class="like-above like">
+        <input type="checkbox" id="like-1" name="like">
+          <label for="like-1"></label>
+        </input>
+      </div>
+       <div class="trash-above trash">
+        <input type="checkbox" id="trash-1" name="trash">
+          <label for="trash-1"></label>
+        </input>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="panel-img-lg">
+        <a href="play1.html" target="blank"><img src="img/item2.jpg" width="500px" height="280px"></a>
+         <div class="reason">
+          <div class="reasontext">
+          <p>推荐原因：</p>
+          <p>你有治愈向DNA</p>
+          <p>你喜欢看《虫师》</p>
+          <p>你的朋友鱼小铺喜欢</p>
+          </div>
+        </div>
+      </div>
+      <div class="panel-info-above">
+        <p class="title"><a href="play1.html" target="blank">夏目友人帐</a></p>
+        <div class="info"><span>动画</span><span>45:30</span></div>
+      </div>
+      <div class="like-above like">
+        <input type="checkbox" id="like-2" name="like">
+          <label for="like-2"></label>
+        </input>
+      </div>
+       <div class="trash-above trash">
+        <input type="checkbox" id="trash-2" name="trash">
+          <label for="trash-2"></label>
+        </input>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+      <div class="col-md-3">
+      <div class="panel-img">
+        <a href="play2.html" target="blank"><img src="img/item3.jpg" width="235px" height="136px"></a>
+         <div class="reason-md">
+          <div class="reasontext-md">
+          <p>推荐原因：</p>
+          <p>你有技术宅DNA</p>
+          <p>你的朋友鱼小铺喜欢</p>
+          </div>
+        </div>
+      </div>
+      <div class="panel-info">
+        <p class="title"><a href="play2.html" target="blank">机械姬</a></p>
+        <div class="info"><span>电影</span><span>120:00</span></div>
+      </div>
+      <div class="like-above-s like">
+        <input type="checkbox" id="like-3" name="like">
+          <label for="like-3"></label>
+        </input>
+      </div>
+       <div class="trash-above-s trash">
+        <input type="checkbox" id="trash-3" name="trash">
+          <label for="trash-3"></label>
+        </input>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="panel-img">
+        <a href="play.html" target="blank"><img src="img/item4.jpg" width="235px" height="136px"></a>
+         <div class="reason-md">
+          <div class="reasontext-md">
+          <p>推荐原因：</p>
+          <p>你喜欢宠物</p>
+          </div>
+        </div>
+      </div>
+      <div class="panel-info">
+        <p class="title"><a href="#">精灵鼠小弟吃意大利面</a></p>
+        <div class="info"><span>娱乐</span><span>30:00</span></div>
+      </div>
+      <div class="like-above-s like">
+        <input type="checkbox" id="like-4" name="like">
+          <label for="like-4"></label>
+        </input>
+      </div>
+       <div class="trash-above-s trash">
+        <input type="checkbox" id="trash-4" name="trash">
+          <label for="trash-4"></label>
+        </input>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="panel-img">
+        <a href="play.html" target="blank"><img src="img/item5.jpg" width="235px" height="136px"></a>
+        <div class="reason-md">
+          <div class="reasontext-md">
+          <p>推荐原因：</p>
+          <p>你有搞笑向DNA</p>
+          <p>你喜欢看《男子高中生的日常》</p>
+          </div>
+        </div>
+      </div>
+      <div class="panel-info">
+        <p class="title"><a href="#">校园迷糊大王</a></p>
+        <div class="info"><span>动画</span><span>42:00</span></div>
+      </div>
+      <div class="like-above-s like">
+        <input type="checkbox" id="like-5" name="like">
+          <label for="like-5"></label>
+        </input>
+      </div>
+       <div class="trash-above-s trash">
+        <input type="checkbox" id="trash-5" name="trash">
+          <label for="trash-5"></label>
+        </input>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="panel-img">
+        <a href="play.html" target="blank"><img src="img/item6.jpg" width="235px" height="136px"></a>
+        <div class="reason-md">
+          <div class="reasontext-md">
+          <p>推荐原因：</p>
+          <p>你喜欢动漫</p>
+          <p>你的朋友xiaoWang喜欢</p>
+          </div>
+        </div>
+      </div>
+      <div class="panel-info">
+        <p class="title"><a href="#">蜡笔小新</a></p>
+        <div class="info"><span>动画</span><span>45:20</span></div>
+      </div>
+      <div class="like-above-s like">
+        <input type="checkbox" id="like-6" name="like">
+          <label for="like-6"></label>
+        </input>
+      </div>
+       <div class="trash-above-s trash">
+        <input type="checkbox" id="trash-6" name="trash">
+          <label for="trash-6"></label>
+        </input>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+      <div class="col-md-3">
+      <div class="panel-img">
+        <a href="play.html" target="blank"><img src="img/item7.jpg" width="235px" height="136px"></a>
+        <div class="reason-md">
+          <div class="reasontext-md">
+          <p>推荐原因：</p>
+          <p>你喜欢女声歌曲</p>
+          <p>你的朋友Gigi_cst喜欢</p>
+          </div>
+        </div>
+      </div>
+      <div class="panel-info">
+        <p class="title"><a href="#">荷塘月色【晴霄】</a></p>
+        <div class="info"><span>音乐</span><span>4:50</span></div>
+      </div>
+      <div class="like-above-s like">
+        <input type="checkbox" id="like-7" name="like">
+          <label for="like-7"></label>
+        </input>
+      </div>
+       <div class="trash-above-s trash">
+        <input type="checkbox" id="trash-7" name="trash">
+          <label for="trash-7"></label>
+        </input>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="panel-img">
+        <a href="play.html" target="blank"><img src="img/item8.jpg" width="235px" height="136px"></a>
+        <div class="reason-md">
+          <div class="reasontext-md">
+          <p>推荐原因：</p>
+          <p>你有文艺DNA</p>
+          <p>你的朋友鱼小铺喜欢</p>
+          </div>
+        </div>
+      </div>
+      <div class="panel-info">
+        <p class="title"><a href="#">富贵逼人【豆瓣高分】</a></p>
+        <div class="info"><span>电影</span><span>120:00</span></div>
+      </div>
+      <div class="like-above-s like">
+        <input type="checkbox" id="like-8" name="like">
+          <label for="like-8"></label>
+        </input>
+      </div>
+       <div class="trash-above-s trash">
+        <input type="checkbox" id="trash-8" name="trash">
+          <label for="trash-8"></label>
+        </input>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="panel-img">
+        <a href="play.html" target="blank"><img src="img/item9.jpg" width="235px" height="136px"></a>
+        <div class="reason-md">
+          <div class="reasontext-md">
+          <p>推荐原因：</p>
+          <p>你喜欢日剧</p>
+          <p>你喜欢《东京物语》</p>
+          </div>
+        </div>
+      </div>
+      <div class="panel-info">
+        <p class="title"><a href="#">家族的形式</a></p>
+        <div class="info"><span>电视剧</span><span>45:20</span></div>
+      </div>
+      <div class="like-above-s like">
+        <input type="checkbox" id="like-9" name="like">
+          <label for="like-9"></label>
+        </input>
+      </div>
+       <div class="trash-above-s trash">
+        <input type="checkbox" id="trash-9" name="trash">
+          <label for="trash-9"></label>
+        </input>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="panel-img">
+        <a href="play.html" target="blank"><img src="img/item10.jpg" width="235px" height="136px"></a>
+        <div class="reason-md">
+          <div class="reasontext-md">
+          <p>推荐原因：</p>
+          <p>你有吃货DNA</p>
+          <p>你的朋友colaLights喜欢</p>
+          </div>
+        </div>
+      </div>
+      <div class="panel-info">
+        <p class="title"><a href="#">独特中国味</a></p>
+        <div class="info"><span>科技</span><span>120:00</span></div>
+      </div>
+      <div class="like-above-s like">
+        <input type="checkbox" id="like-10" name="like">
+          <label for="like-10"></label>
+        </input>
+      </div>
+       <div class="trash-above-s trash">
+        <input type="checkbox" id="trash-10" name="trash">
+          <label for="trash-10"></label>
+        </input>
+      </div>
+    </div>
+  </div>
+
+  <div class="change-panel">
+   <div class="container change">
+   <h4 style="text-align: center;">选择不同的推荐算法</h4>
+    <form role="form">
+      <label class="checkbox-inline">
+        <input type="checkbox" value="">TF-IDF
+      </label>
+      <label class="checkbox-inline">
+        <input type="checkbox" value="">Collaborative Filtering
+      </label>
+      <label class="checkbox-inline">
+        <input type="checkbox" value="">LDA
+      </label>
+    </form>
+    </div>
+     <div class="radarChart"><a href="preference.html" class="btn-round btn"></div>
+
+
+    <script src="js/indexRadarChart.js"></script> 
+    <script>
+      ////////////////////////////////////////////////////////////// 
+      //////////////////////// Set-Up ////////////////////////////// 
+      ////////////////////////////////////////////////////////////// 
+      var margin = {top: 50, right: 50, bottom: 50, left: 50},
+        width = Math.min(450, window.innerWidth - 10) - margin.left - margin.right,
+        height = Math.min(width, window.innerHeight - margin.top - margin.bottom - 20);
+          
+      ////////////////////////////////////////////////////////////// 
+      ////////////////////////// Data ////////////////////////////// 
+           var data = [
+            
+            {axis:"Battery Life",value:0.22, tag:"萝莉控"},
+            {axis:"Brand",value:0.28, tag:"鬼畜"},
+            {axis:"Contract Cost",value:0.29, tag:"燃"},
+            {axis:"Design And Quality",value:0.17, tag:"摇滚"},
+            {axis:"Have Internet Connectivity",value:0.22, tag:"小清新"},
+            {axis:"Large Screen",value:0.02, tag:"技术宅"},
+            {axis:"Price Of Device",value:0.21, tag:"动漫"},
+            {axis:"To Be A Smartphone",value:0.50, tag:"90后"},     
+           
+            {axis:"Battery Life",value:0.27, tag:"奇葩"},
+            {axis:"Brand",value:0.16, tag:"催泪"},
+            {axis:"Contract Cost",value:0.35, tag:"文艺"},
+            {axis:"Design And Quality",value:0.13, tag:"搞笑"},
+            {axis:"Have Internet Connectivity",value:0.20, tag:"萌系"},
+            {axis:"Large Screen",value:0.13, tag:"致郁"},
+            {axis:"Price Of Device",value:0.35, tag:"治愈"},
+            {axis:"To Be A Smartphone",value:0.38, tag:"我是歌手"},
+            
+          ];
+       
+      ////////////////////////////////////////////////////////////// 
+      //////////////////// Draw the Chart ////////////////////////// 
+      ////////////////////////////////////////////////////////////// 
+      var color = d3.scale.ordinal()
+        .range(["#EDC951","#CC333F","#00A0B0"]);
+        
+      var radarChartOptions = {
+        w: width,
+        h: height,
+        margin: margin,
+        maxValue: 0.5,
+        levels: 6,
+        roundStrokes: true,
+        color: color
+      };
+      //Call function to draw the Radar chart
+      RadarChart(".radarChart", data, radarChartOptions);
+    </script>
+
+
+  </div>
+  <a href="javascript:void(0);" class="slider-arrow show fa fa-cog"></a>
+
+</div> <!-- /container -->
+
+<!--<script src="js/libs/jquery/jquery.js"></script>-->
+</body>
+</html>
